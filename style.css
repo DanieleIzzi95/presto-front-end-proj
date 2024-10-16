@@ -1,0 +1,136 @@
+:root{
+    --main: #402722;
+    --sec: #8C8C8C;
+    --acc: #73534C;
+    --bg: #f0f0f0;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* TITLE SYSTEM */
+h1{ font-family: "Agdasima", sans-serif !important;
+    font-size: 4rem !important;
+    font-weight: bold !important;
+    color: var(--bg) !important;
+}
+
+h2{ font-family: "Agdasima", sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: var(--acc) !important;
+}
+
+h3{ font-family: "Agdasima", sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    color: var(--acc) !important;
+    letter-spacing: 1px;
+    padding: 5% 2% 3% 2%;
+}
+
+h4{ font-family: "Agdasima", sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: var(--acc) !important;
+}
+p{  font-family: "Inter", sans-serif;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #1f1f1f !important;
+}
+
+
+
+
+/* COLOR SYSTEM*/
+.c-color-main{ color: var(--main) !important; }
+.c-bg-color-main{ color: var(--main) !important; }
+.c-color-sec{ color: var(--sec) !important; }
+.c-bg-color-sec{ color: var(--sec) !important; }
+.c-color-acc{ color: var(--acc) !important; }
+.c-bg-color-acc{ color: var(--acc) !important; }
+.c-color-bg{ color: var(--bg) !important; }
+.c-bg-color-bg{ color: var(--bg) !important; }
+
+
+
+
+/* ------------ START ---------- */
+
+/* navbar */
+.navbar-toggler{
+    border: none;
+    color: #f0f0f0;
+}
+
+.navScroll {
+    transition: 0.1s;
+    background-color: var(--acc);
+}
+
+/* header */
+.img-header{
+    height: 90vh;
+    background: linear-gradient(180deg, rgb(27, 27, 27), 10%, transparent), url(./media/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* main */
+
+.text-number{
+    font-weight: 600 !important;
+    color: #2d2d2d !important;
+}
+
+.c-numeri{
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    color: var(--acc) !important;
+}
+
+.c-h-footer{
+    margin-top: 40px;
+    height: 15vh;
+}
+
+.c-footer{
+    background-color: #2b2b2b;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+    .img-header{
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 3rem !important;
+    }
+
+    h3 {
+        font-family: "Agdasima", sans-serif !important;
+        font-size: 2.2rem !important;
+        font-weight: 500 !important;
+        color: var(--acc) !important;
+        letter-spacing: 1px;
+        padding: 40px 16px;
+    }
+
+    h4{
+        font-size: 2rem !important;
+        padding: 16px 0;
+    }
+}
