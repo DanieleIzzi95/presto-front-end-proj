@@ -5,12 +5,14 @@ let navbar = document.querySelector('nav');
 //creo l'evento per lo scroll della navbar
 document.addEventListener('scroll', () => {
 
-    if (window.scrollY > 895) {
+    if (window.scrollY > 250) {
         navbar.classList.add('navScroll');
     } else {
         navbar.classList.remove('navScroll');
     }
 })
+console.log(window.scrollY);
+
 
 //creo le variabili per i numeri
 let firstNumber = document.querySelector('#firstNumber');
