@@ -11,7 +11,6 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navScroll');
     }
 })
-console.log(window.scrollY);
 
 
 //creo le variabili per i numeri

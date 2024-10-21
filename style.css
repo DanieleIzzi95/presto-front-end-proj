@@ -3,7 +3,12 @@
     --sec: #8C8C8C;
     --acc: #262626;
     --bg: #f0f0f0;
+    --dark-main: #402722;
+    --dark-sec: #8C8C8C;
+    --dark-acc: #262626;
+    --dark-bg: #1d1d1d;
 }
+
 
 *{
     font-family: "Montserrat", sans-serif;
@@ -12,11 +17,29 @@
 body{
     margin: 0 !important;
     padding: 0 !important;
+    background-color: var(--bg) !important;
+    /* background-color: var(--dark-bg) !important; */
 }
+
+.darkmode{
+    background-color: var(--dark-bg) !important;
+}
+
+.c-darkModeBtn{
+    border: none !important;
+    background-color: transparent !important;
+} */
 
 h1, h2, h3, h4, h5, h6, ul, li, p {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+p{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 0.5rem !important;
+    font-weight: 300 !important;
+    color: var(--bg) !important;
 }
 
 /* TITLE SYSTEM */
@@ -46,8 +69,8 @@ h3{ font-family: "Montserrat", sans-serif !important;
 }
 
 h4{ font-family: "Montserrat", sans-serif !important;
-    font-size: 2rem !important;
-    font-weight: 400 !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
     color: var(--acc) !important;
     padding: 14px 0 !important;
 }
