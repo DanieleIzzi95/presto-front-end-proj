@@ -1,4 +1,5 @@
 // evento scroll navbar
+let navbar = document.querySelector('nav');
 document.addEventListener('scroll', () => {
 
     if (window.scrollY > 250) {
@@ -8,12 +9,48 @@ document.addEventListener('scroll', () => {
     }
 })
 
-// darkModeBtn
-let darkModeBtn = document.querySelector('#darkModeBtn')
 
-darkModeBtn.addEventListener('click', ()=>{
-    document.body.classList.toggle('darkmode')
+// darkMode
+let mode = localStorage.getItem('mode', 'light');
+// bottone filtri (annunci)
+let button = document.querySelector('#button')
+let body = document.querySelector('body');
+let buttonDark = document.querySelector('#buttonDark');
+
+let confirm = false;
+buttonDark.addEventListener('click', () => {
+    if (!confirm) {
+        confirm = true;
+        body.classList.add('darkMode');
+        buttonDark.innerHTML = `<i class="bi bi-brightness-high-fill text-white"></i>`
+        localStorage.setItem('mode', 'dark');
+        button.classList.remove('btn-outline-dark')
+        button.classList.add('btn-outline-light');
+    } else {
+        confirm = false;
+        body.classList.remove('darkMode')
+        buttonDark.innerHTML = `<i class="bi bi-moon-fill text-light"></i>`
+        localStorage.setItem('mode', 'light');
+        button.classList.add('btn-outline-dark');
+        button.classList.remove('btn-outline-light');
+    }
 })
+
+if (mode == 'dark') {
+    confirm = true;
+    body.classList.add('darkMode');
+    buttonDark.innerHTML = `<i class="bi bi-brightness-high-fill text-light"></i>`
+    button.classList.remove('btn-outline-dark');
+    button.classList.add('btn-outline-light');
+} else {
+    confirm = false;
+    body.classList.remove('darkMode');
+    buttonDark.innerHTML = ` <i class="bi bi-moon-fill text-light"></i>`
+    button.classList.add('btn-outline-dark');
+    button.classList.remove('btn-outline-light');
+}
+
+
 
 // catture container
 let containerCards = document.querySelector('#containerCards');
