@@ -9,7 +9,6 @@ document.addEventListener('scroll', () => {
     }
 })
 
-
 // darkMode
 let mode = localStorage.getItem('mode', 'light');
 // bottone filtri (annunci)
@@ -50,8 +49,6 @@ if (mode == 'dark') {
     button.classList.remove('btn-outline-light');
 }
 
-
-
 // catture container
 let containerCards = document.querySelector('#containerCards');
 let containerCategory = document.querySelector('#containerCategory');
@@ -70,7 +67,7 @@ fetch('./annunci.json').then(response => response.json()).then(data => {
             div.classList.add('col-12', 'col-md-4', `col-xl-3`, 'mb-5', 'px-0', 'px-md-4');
             div.innerHTML = `
                 <div class="card">
-                    <img src = "${card.img}" class="card-img-top" alt = "..." >
+                    <img src = "${card.img}" class="c-card-img-top" alt = "..." >
                         <div class="card-body">
                             <h5 class="card-title pt-2 text-capitalize">${card.name}</h5>
                             <p class="card-text pb-2 fs-6 text-capitalize c-category">${card.category}</p>
@@ -160,12 +157,4 @@ fetch('./annunci.json').then(response => response.json()).then(data => {
     wordInput.addEventListener(`input`, ()=>{
         filterByWord()
     })
-
-
-
-
-
-
-
-
 })

@@ -1,7 +1,6 @@
-//mi catturo il tag nav
+//tag nav
 let navbar = document.querySelector('nav');
-
-//creo l'evento per lo scroll della navbar
+//evento scroll navbar
 document.addEventListener('scroll', () => {
 
     if (window.scrollY > 250) {
@@ -11,23 +10,24 @@ document.addEventListener('scroll', () => {
     }
 })
 
-
 // darkMode
 let mode = localStorage.getItem('mode', 'light');
-// bottone filtri (annunci)
-let button = document.querySelector('#button')
+let button = document.querySelector('#button') // Bottoni vari
 let body = document.querySelector('body');
 let buttonDark = document.querySelector('#buttonDark');
+let icon = document.querySelector('#icon');
 
 let confirm = false;
-buttonDark.addEventListener('click', ()=>{
-    if (!confirm){
+buttonDark.addEventListener('click', () => {
+    if (!confirm) {
         confirm = true;
         body.classList.add('darkMode');
         buttonDark.innerHTML = `<i class="bi bi-brightness-high-fill text-white"></i>`
         localStorage.setItem('mode', 'dark');
         button.classList.remove('btn-outline-dark')
         button.classList.add('btn-outline-light');
+        icon.classList.remove('text-dark');
+        icon.classList.add('text-light');
     } else {
         confirm = false;
         body.classList.remove('darkMode')
@@ -35,6 +35,8 @@ buttonDark.addEventListener('click', ()=>{
         localStorage.setItem('mode', 'light');
         button.classList.add('btn-outline-dark');
         button.classList.remove('btn-outline-light');
+        icon.classList.add('text-dark');
+        icon.classList.remove('text-light');
     }
 })
 
@@ -42,15 +44,19 @@ if (mode == 'dark') {
     confirm = true;
     body.classList.add('darkMode');
     buttonDark.innerHTML = `<i class="bi bi-brightness-high-fill text-light"></i>`
+    button.classList.remove('btn-outline-dark');
+    button.classList.add('btn-outline-light');
+    icon.classList.remove('text-dark');
+    icon.classList.add('text-light');
 } else {
     confirm = false;
     body.classList.remove('darkMode');
     buttonDark.innerHTML = ` <i class="bi bi-moon-fill text-light"></i>`
+    button.classList.add('btn-outline-dark');
+    button.classList.remove('btn-outline-light');
+    icon.classList.add('text-dark');
+    icon.classList.remove('text-light');
 }
-
-
-
-
 
 
 //creo le variabili per i numeri

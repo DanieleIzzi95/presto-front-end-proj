@@ -1,3 +1,13 @@
+// evento scroll navbar
+document.addEventListener('scroll', () => {
+
+    if (window.scrollY > 250) {
+        navbar.classList.add('navScroll');
+    } else {
+        navbar.classList.remove('navScroll');
+    }
+})
+
 let navbar = document.querySelector('nav')
 
 // darkMode
@@ -29,17 +39,6 @@ if (mode == 'dark') {
     body.classList.remove('darkMode');
     buttonDark.innerHTML = ` <i class="bi bi-moon-fill text-light"></i>`
 }
-
-
-// evento scroll navbar
-document.addEventListener('scroll', () => {
-
-    if (window.scrollY > 250) {
-        navbar.classList.add('navScroll');
-    } else {
-        navbar.classList.remove('navScroll');
-    }
-})
 
 //  ---------------------------------
 

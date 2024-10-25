@@ -37,17 +37,24 @@
                         <a class="nav-link text-white" aria-current="page" href="./annunci.html">Tutti gli annunci</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Chi siamo</a>
+                        <a class="nav-link text-white" href="./chi-siamo.html">Chi siamo</a>
                     </li>
                 </ul>
+                <!-- social -->
+                <div class=" opacity-75 py-3 py-md-0 d-none d-md-block d-lg-none">
+                    <p class="text-white">Seguici sui social</p>
+                    <i class="bi bi-instagram text-white pe-2"></i>
+                    <i class="bi bi-facebook text-white px-2"></i>
+                    <i class="bi bi-threads-fill text-white px-2"></i>
+                    <i class="bi bi-envelope text-white ps-2"></i>
+                </div>
                 <!-- icona dark mode  -->
-                <div>
+                <div class="my-3">
                     <i id="buttonDark"></i>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <!-- header -->
     <div class="container-fluid">
@@ -124,80 +131,119 @@
             </div>
         </section>
 
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./media/tavolo esterni.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./media/lampada.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./media/tv.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./media/divano interni.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./media/tavolo.jpg" alt="">
-                </div>
+        <!-- Sezione 3 Swiper -->
+        <div class="container">
+            <div class="row justify-content-center">
+                    <!-- intestazione sezione -->
+                    <div class="col-12 py-5 my-3">
+                        <h3>Prodotti in evidenza</h3>
+                    </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./media/tavolo esterni.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/lampada.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/tv.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/divano interni.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./media/tavolo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
 
+        <!-- sezione 4 icone -->
+        <div class="container my-5 pt-md-5">
+            <div class="row align-items-baseline justify-content-center">
+                <div class="col-8 col-md-3 px-2 px-md-3 my-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <i class="bi bi-truck fs-1" id="icon"></i>
+                    <p class="fw-medium">Free shipping</p>
+                    <p>Lorem ipsum dolor sit amet consect</p>
+                </div>
+                <div class="col-8 col-md-3 px-2 px-md-3 my-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <i class="bi bi-credit-card-2-back fs-1" id="icon"></i>
+                    <p class="fw-medium">Flexible Payment</p>
+                    <p>Lorem ipsum dolor sit amet consect</p>
+                </div>
+                <div class="col-8 col-md-3 px-2 px-md-3 my-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <i class="bi bi-arrow-90deg-left fs-1" id="icon"></i>
+                    <p class="fw-medium">7 Days Return</p>
+                    <p>Lorem ipsum dolor sit amet consect</p>
+                </div>
+                <div class="col-8 col-md-3 px-2 px-md-3 my-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <i class="bi bi-headset fs-1" id="icon"></i>
+                    <p class="fw-medium">Online support</p>
+                    <p>Lorem ipsum dolor sit amet consect</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- newsletter -->
+        <div class="container-fluid my-5 py-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <p class="my-1 text-uppercase">subscribe</p>
+                    <h3 class="my-2">Newsletter</h3>
+                    <input type="email" class="form-control my-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                    <button class="btn btn-outline-dark rounded-3 my-2" id="button">Submit</button>
+                </div>
+            </div>
+        </div>
     </main>
 
-        <!-- footer -->
-        <div class="container-fluid py-2 py-md-4 d-flex flex-column align-items-center justify-content-center c-footer h-100">
-            <div class="row w-100 h-100 py-2 align-items-baseline justify-content-center ">
-                <div class="col-4 col-md-4 d-flex flex-column justify-content-center ">
-                    <h2>Presto.it</h2>
-                    <p class="text-white-50 c-payoff-footer">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
-                    <ul class="d-flex flex-column align-items-end justify-content-center list-unstyled">
-                        <p class="text-white c-font-footer fw-bold">Contact us</li>
-                        <p class="text-white c-font-footer fw-light">support@presto.it</p>
-                    </ul>
-                </div>
-                <div class="col-4 col-md-3 py-2 d-flex justify-content-center align-items-center">
-                    <ul class="d-flex flex-column align-items-end justify-content-center list-unstyled w-100">
-                        <p class="text-white c-font-footer fw-bold">Information</li>
-                        <p class="text-white c-font-footer fw-light">Term & Conditions EU</p>
-                        <p class="text-white c-font-footer fw-light">Term & Conditions IT</p>
-                        <p class="text-white c-font-footer fw-light">Discalimer</p>
-                        <p class="text-white c-font-footer fw-light">Privacy policy</p>
-                        <p class="text-white c-font-footer fw-light">Cookie poloicy</p>
-                    </ul>
-                </div>
+    <!-- footer -->
+    <div class="container-fluid py-2 py-md-4 d-flex flex-column align-items-center justify-content-center c-footer h-100">
+        <div class="row w-100 h-100 py-2 align-items-baseline justify-content-center ">
+            <div class="col-4 col-md-4 d-flex flex-column justify-content-center ">
+                <h2>Presto.it</h2>
+                <p class="text-white-50 c-payoff-footer">Lorem ipsum dolor sit amet.</p>
             </div>
-
-
-            <!-- icone -->
-            <div class="container-fluid c-linea-footer w-100"></div>
-            <div class="container-fluid">
-                <div class="row justify-content-between justify-content-md-center align-items-center">
-                    <div class="col-6">
-                        <p class="text-white c-copyright py-2 py-md-0">© Daniele Izzi 2024</p>
-                    </div>
-                    <div class="col-4 d-flex justify-content-end opacity-75 py-2 py-md-0">
-                        <i class="bi bi-instagram text-white px-2"></i>
-                        <i class="bi bi-facebook text-white px-2"></i>
-                        <i class="bi bi-threads-fill text-white px-2"></i>
-                        <i class="bi bi-envelope text-white px-2"></i>
-                    </div>
-                </div>
+            <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
+                <ul class="d-flex flex-column align-items-start align-items-md-end justify-content-center list-unstyled">
+                    <p class="text-white c-font-footer fw-bold">Contact us</li>
+                    <p class="text-white c-font-footer fw-light">support@presto.it</p>
+                </ul>
+            </div>
+            <div class="col-4 col-md-3 py-2 d-flex justify-content-center align-items-center">
+                <ul class="d-flex flex-column align-items-start align-items-md-end justify-content-center list-unstyled w-100">
+                    <p class="text-white c-font-footer fw-bold">Information</li>
+                    <p class="text-white c-font-footer fw-light">Term & Conditions EU</p>
+                    <p class="text-white c-font-footer fw-light">Term & Conditions IT</p>
+                    <p class="text-white c-font-footer fw-light">Discalimer</p>
+                    <p class="text-white c-font-footer fw-light">Privacy policy</p>
+                    <p class="text-white c-font-footer fw-light">Cookie poloicy</p>
+                </ul>
             </div>
         </div>
 
 
-
-
-
-
+        <!-- icone -->
+        <div class="container-fluid c-linea-footer w-100"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-between justify-content-md-center align-items-center">
+                <div class="col-6">
+                    <p class="text-white c-copyright py-2 py-md-0">© Daniele Izzi 2024</p>
+                </div>
+                <div class="col-4 d-flex justify-content-end opacity-75 py-2 py-md-0">
+                    <i class="bi bi-instagram text-white px-2"></i>
+                    <i class="bi bi-facebook text-white px-2"></i>
+                    <i class="bi bi-threads-fill text-white px-2"></i>
+                    <i class="bi bi-envelope text-white px-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -220,7 +266,6 @@
             },
         });
     </script>
-
     <!-- cdn aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- inizializzazione aos -->
